@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+   
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Garante espaço entre os elementos */
+  padding: 10px;
+  background-color: #011820;
+  color: white;
+  position: relative;
+}
+
+.header .logo {
+  height: 50px;
+  flex-shrink: 0; /* Evita que a logo diminua ou sobreponha o título */
+  margin-right: 10px;
+}
+
+.header h1 {
+  flex-grow: 1; /* Faz o título ocupar o espaço central */
+  text-align: center;
+  margin: 0;
+  white-space: nowrap; /* Evita que o título quebre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Garante espaçamento entre a logo e o texto */
+  min-width: 0; /* Evita que o texto quebre inesperadamente */
+}
+
+/* Responsividade */
+@media (max-width: 455px) {
+  .header {
+    flex-direction: column; /* Faz os elementos ficarem empilhados */
+    text-align: center;
+  }
+
+  .header .logo {
+    position: static; /* Remove o posicionamento absoluto para não colidir */
+    margin-bottom: 5px;
+  }
+
+  .app-container {
+    margin-left: 1px;
+}
+}
+
+
+
+
+.game-info {
+  margin-top: 20px;
+  color: #D0EAF2;
+  margin-left: 2%;
+}
+
+.app-container {
+  background-color:#000B0F; /* Fundo preto */
+}
+
+/* Estilos para a seção "Sobre o Desenvolvedor" */
+.about-me {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #011820;
+  border-radius: 10px;
+  text-align: center;
+  color:#D0EAF2;
+}
+
+.about-me h1{
+  color:#1A9EC5;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+.about-me-text {
+  max-width: 600px;
+  text-align: justify;
+}
+
+.portfolio-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portfolio-link:hover {
+  text-decoration: underline;
+}
