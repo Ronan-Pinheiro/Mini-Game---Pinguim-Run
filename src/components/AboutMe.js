@@ -27,7 +27,7 @@ function AboutMe() {
           <p>
             Explore meu portfólio e descubra mais projetos! <br />
             <a
-              href="Ronan-Pinheiro/Guia-Completo-De-Como-Assistir-One-Piece-Sem-Fillers"
+              href="https://portfolio-ronan-pinheiro.vercel.app/"
             >
               DEV= Ronan Pinheiro
             </a>
